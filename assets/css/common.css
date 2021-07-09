@@ -1,0 +1,223 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 23px 20px;
+    z-index: 888;
+    transition: 0.4s;
+    color: #c7c7c7;
+    font-size: 17px;
+    font-family: 'Noto Serif TC', serif;
+    background: -moz-linear-gradient(top,  rgba(36,7,86,1) 0%, rgba(36,7,86,1) 1%, rgba(111,74,214,0.55) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(36,7,86,1) 0%,rgba(36,7,86,1) 1%,rgba(111,74,214,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(36,7,86,1) 0%,rgba(36,7,86,1) 1%,rgba(111,74,214,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#240756', endColorstr='#8c6f4ad6',GradientType=0 ); /* IE6-9 */
+}
+header .menu {
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header .menu li{
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.4s;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+header .menu li a { transition: 0.4s;text-decoration: none;color: #c7c7c7;}
+header .menu li:hover,header .menu li a:hover {
+    color: #fff;
+}
+
+header .menu>li:nth-child(1){
+    background: -moz-linear-gradient(top,  rgba(21,146,162,0) 0%, rgba(21,146,162,0) 1%, rgba(4,128,144,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(4,128,144,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(4,128,144,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001592a2', endColorstr='#048090',GradientType=0 ); /* IE6-9 */
+}
+header .menu li:nth-child(2){
+    background: -moz-linear-gradient(top,  rgba(21,146,162,0) 0%, rgba(21,146,162,0) 1%, rgba(58,145,209,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(58,145,209,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(58,145,209,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001592a2', endColorstr='#3a91d1',GradientType=0 ); /* IE6-9 */
+}
+header .menu li:nth-child(3){
+    background: -moz-linear-gradient(top,  rgba(193,164,84,0) 1%, rgba(193,164,84,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(193,164,84,0) 1%,rgba(193,164,84,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(193,164,84,0) 1%,rgba(193,164,84,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1a454', endColorstr='#c1a454',GradientType=0 ); /* IE6-9 */
+}
+    
+.open {
+    display: none;
+}
+@media (max-width: 1025px) {
+    header{
+        padding: 23px 0px;
+    }
+    header .menu li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 769px) {
+    header {
+        height: 60px;
+    }
+    nav{ display: none;}
+    header .menu {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #001833;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 80px;
+    z-index: 888;
+    }
+
+    header .menu li {
+    letter-spacing: 2px;
+    padding: 0 24px;
+    font-size: 30px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    margin-bottom: 50px;
+    font-weight: 300;
+    cursor: pointer;
+    width: 40%;
+    display: inline-block;
+    margin: 10px auto;
+    }
+
+    .open {
+    display: block;
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    top: 30px;
+    left: 30px;
+    z-index: 999;
+    cursor: pointer;
+    }
+    .openBtn {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    }
+    .open span:nth-child(1) {
+    transition: 0.4s;
+    top: 10px;
+    }
+    .open span:nth-child(2) {
+    transition: 0.4s;
+    top: 0px;
+    box-shadow: 0 0 4px rgba(51, 51, 51, 0.3);
+    }
+    .open span:nth-child(3) {
+    transition: 0.4s;
+    top: -10px;
+    box-shadow: 0 0 4px rgba(51, 51, 51, 0.3);
+    }
+    .opening span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0;
+    }
+    .opening span:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0);
+    }
+    .opening span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0;
+    }
+}
+@media (max-width: 415px) {
+    header {
+    padding: 10px 13px;
+    }
+    header .menu li {
+    font-size: 18px;
+    color: #fff;
+    }
+
+    .open {
+    display: block;
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    top: 30px;
+    right: 25px;
+    }
+}
+@media (max-width: 321px) {
+    header {
+    padding: 10px 10px;
+    }
+}
+
+.gotop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 24px;
+    background-color: #fff;
+    border-radius: 90px;
+    width: 50px;
+    height: 50px;
+    border: 1px #fff solid;
+    z-index: 9999;
+}
+
+@media all and (max-width: 415px) {
+    .gotop {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 20px;
+    }
+}
+
+.gotop img {
+    width: 100%;
+}
+    
+footer { width: 100%; display: block; text-align: center; background-color: #363636; padding: 62px 0;}
+footer a{  display: inline; border-bottom: 1px solid #fff; color: #fff;}
+footer p {  font-size: 14px; font-family: "Noto Sans TC",sans-serif ; font-weight: 100;line-height: 28px; color: #fff;}
+  @media all and (max-width: 769px) {
+    footer { 
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+    footer p {
+      line-height: 22px;
+    }
+  }
+  @media all and (max-width: 769px) {
+        footer { 
+            padding: 30px 10px 80px;
+        }
+    }
+.body_fixed{
+overflow: hidden;
+width: 100%;
+}

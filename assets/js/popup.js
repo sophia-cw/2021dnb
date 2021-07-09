@@ -1,0 +1,21 @@
+$('.open_popup--1').click(function(){
+  $('.popupBox--1').fadeIn();
+  $("body").addClass("body_fixed");
+});
+$('.open_popup--2').click(function(){
+  $('.popupBox--2').fadeIn();
+  $("body").addClass("body_fixed");
+});
+$('.open_popup--3').click(function(){
+  $('.popupBox--3').fadeIn();
+  $("body").addClass("body_fixed");
+});
+
+$('.btn_close').click(function(){
+  $('.popupBox').fadeOut();
+  $("body").removeClass("body_fixed");
+});
+$('.fulllink').click(function(){
+  $('.popupBox').fadeOut();
+  $("body").removeClass("body_fixed");
+});
