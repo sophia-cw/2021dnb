@@ -1,0 +1,94 @@
+$pc_l: 1680px;
+$pc_m: 1366px;
+$pc_s: 1025px;
+$pad: 769px;
+$mb_l: 440px;
+$mb_m: 376px;
+$mb_s: 321px;
+
+@mixin pc-width_l() {
+  @media all and (min-width: $pc_l) {
+    @content;
+  }
+}
+@mixin pc-width_m() {
+  @media all and (max-width: $pc_m) {
+    @content;
+  }
+}
+@mixin pc-width_s() {
+  @media all and (max-width: $pc_s) {
+    @content;
+  }
+}
+@mixin pad-width() {
+  @media all and (max-width: $pad) {
+    @content;
+  }
+}
+@mixin mb-width_l() {
+  @media all and (max-width: $mb_l) {
+    @content;
+  }
+}
+@mixin mb-width_m() {
+  @media all and (max-width: $mb_m) {
+    @content;
+  }
+}
+@mixin mb-width_s() {
+  @media all and (max-width: $mb_s) {
+    @content;
+  }
+}
+// 背景色
+@mixin bg_gray1 {
+  background-color: #f8f8f8;
+}
+@mixin bg_gray2 {
+  background-color: #f4f4f4;
+}
+@mixin bg_gray3 {
+  background-color: #ededed;
+}
+@mixin bg_gray4 {
+  background-color: #e8e8e8;
+}
+.assessmentBox{
+    width: 100%;
+    padding: 100px 50px;
+    @include mb-width_l(){
+      padding: 80px 20px;
+    }
+    &__content{
+      width: 100%;
+      max-width: 1160px;
+      margin: 70px auto 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      .assessment{
+          width: 100%;
+          max-width: 280px;
+          height: auto;
+          margin: 0 auto 70px;
+          .pic{
+            width: 230px;
+            height: 230px;
+            background-color: #1a4dad;
+            border-radius: 300px;
+            padding: 30px;
+            margin: 0px auto 30px;
+          }
+          .text{
+            width: 100%;
+            height: auto;
+            p{
+                margin: 20px auto 0;
+                text-align: justify;
+            }
+          }
+      }
+    }
+}

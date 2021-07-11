@@ -209,6 +209,9 @@ p{
           font-size: 14px;
           text-align: center; 
         }
+        @include mb-width_s(){
+          font-size: 12px;
+        }
       }
       h1{
         font-size: 42px;
@@ -218,6 +221,12 @@ p{
         @include mb-width_l(){
           font-size: 25px;
           text-align: center; 
+        }
+        @include mb-width_m(){
+          letter-spacing: 1px;
+        }
+        @include mb-width_s(){
+          font-size: 21px;
         }
         &::before{
           content: "";
@@ -251,6 +260,14 @@ p{
           width: 40%;
           margin: 30px auto;
         }
+        @include mb-width_m(){
+          margin: 10px auto;
+        }
+      }
+    }
+    &--b{
+      @include mb-width_l(){
+        transform: translate(-50%, -57%) scale(1);
       }
     }
   }
@@ -259,13 +276,16 @@ p{
     top: inherit;
     left: 50%;
     bottom: 15%;
-    transform: translate(0%, -50%);
+    transform: translate(-50%, -50%);
     width: 2%;
     height: auto;
     z-index: 5;
     @include mb-width_l(){
       transform: translate(-30%, -50%);
       width: 5%;
+    }
+    &--b{
+      bottom: 10%;
     }
   }
   &__bg{
@@ -687,7 +707,7 @@ a.forum_btn{
     .list{
       display: flex;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: baseline;
       padding: 20px;
       &--bg2{
         background-color: #F8F8F8;
@@ -776,29 +796,30 @@ a.forum_btn{
         width: 77%;
         margin: auto;
       }
-      .text{
-        width: 100%;
-        margin: 10px auto 0px;
-        .name{
-          text-align: center;
-          font-family: 'Noto Serif TC', serif; 
-          font-weight: 600;
-          font-size: 22px;
-          color: #1A4DAD;
-          letter-spacing: 2px;
-        }
-        .title{
-          text-align: center;
-          font-family: "Noto Sans TC", sans-serif;
-          font-weight: 300;
-          font-size: 17px;
-          color: #3A91D1;
-          letter-spacing: 2px;
-        }
-      }
     }
   }
 }
+.text{
+  width: 100%;
+  margin: 10px auto 0px;
+  .name{
+    text-align: center;
+    font-family: 'Noto Serif TC', serif; 
+    font-weight: 600;
+    font-size: 22px;
+    color: #1A4DAD;
+    letter-spacing: 2px;
+  }
+  .title{
+    text-align: center;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #3A91D1;
+    letter-spacing: 2px;
+  }
+}
+
 .videoBox{
   width: 100%;
   height: auto;
@@ -928,10 +949,6 @@ a.forum_btn{
     }
   }
 }
-// .in_popupBox{
-//   display: none;
-//   position: relative;
-// }
 .fulllink {
   width: 100%;
   height: 100%;
@@ -1003,4 +1020,40 @@ a.forum_btn{
 }
 .surveyCon{
   @include bg_gray2();
+}
+.sp_title{
+    position: absolute;
+    top: inherit;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    @include pc-width_s(){
+      bottom: 17%;
+    }
+  h4{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Noto Serif TC', serif; 
+    font-weight: 600;
+    line-height: initial;
+    margin: 0 auto;
+    @include pc-width_s(){
+      font-size: 30px;
+    }
+    @include pad-width(){
+      font-size: 20px;
+    }
+    @include mb-width_l(){
+      font-size: 30px;
+    }
+    @include mb-width_m(){
+      font-size: 25px;
+    }
+    @include mb-width_s(){
+      font-size: 20px;
+    }
+  }
 }
