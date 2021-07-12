@@ -1,11 +1,12 @@
 $(function(){   
 
     $(".part1").click(function(){
-      $("html,body").animate(
-        { scrollTop: $(".forumBox").offset().top + 1 },
-        900
-      );
-      return false;
+      window.location="https://lin-wan-huei.github.io/2021dnb/index.html#forum";
+      // $("html,body").animate(
+      //   { scrollTop: $("#forum").offset().top + 1 },
+      //   900
+      // );
+      // return false;
     });
 
     $(".part2").click(function () {
