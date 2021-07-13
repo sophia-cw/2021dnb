@@ -358,10 +358,9 @@
 textarea,
 select {
   display: inline-block;
-  background-color: #f4f4f4 !important;
+  background-color: #f4f4f4;
   border: none;
   border-bottom: 1px solid #1a4dad;
-  /* width: calc(100% - 100px); */
 }
 
 .surveyCon label {
@@ -383,11 +382,11 @@ input[type='text'],
 textarea,
 select {
   border: 1px solid #999;
-  background-color: #ddd !important;
+  background-color: #ddd;
   letter-spacing: 1px;
   color: #0a0a0a;
   padding: 6px 10px;
-  font-size: 16px !important;
+  font-size: 16px;
   font-weight: 400;
   display: block;
   margin: 0;

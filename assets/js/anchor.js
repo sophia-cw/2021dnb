@@ -1,7 +1,7 @@
 $(function(){   
 
     $(".part1").click(function(){
-      window.location="https://lin-wan-huei.github.io/2021dnb/index.html#forum";
+      window.location="https://event.cw.com.tw/_test-by-cwlab/2021dnb/index.html#forum";
       // $("html,body").animate(
       //   { scrollTop: $("#forum").offset().top + 1 },
       //   900
@@ -10,27 +10,15 @@ $(function(){
     });
 
     $(".part2").click(function () {
-        $("html,body").animate(
-          { scrollTop: $(".speakerBox").offset().top + 1 },
-          900
-        );
-        return false;
+      window.location="https://event.cw.com.tw/_test-by-cwlab/2021dnb/index.html#speakers";
     });
 
     $(".part3").click(function () {
-        $("html,body").animate(
-          { scrollTop: $(".surveyCon").offset().top + 1 },
-          900
-        );
-        return false;
+      window.location="https://event.cw.com.tw/_test-by-cwlab/2021dnb/index.html#survey";
     });
 
     $(".part4").click(function () {
-      $("html,body").animate(
-        { scrollTop: $(".videoBox").offset().top + 1 },
-        900
-      );
-      return false;
+      window.location="https://event.cw.com.tw/_test-by-cwlab/2021dnb/index.html#videos";
     });
 
     // 點擊歷年回顧展開年份
