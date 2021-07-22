@@ -156,6 +156,9 @@ p{
 .kvBox{
   position: relative;
   color: #fff;
+  width: 100%;
+  height: auto;
+  min-height: 50vw;
   &__ttBox{
     position: absolute;
     top: 50%;

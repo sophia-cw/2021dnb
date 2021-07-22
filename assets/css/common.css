@@ -67,7 +67,7 @@ header .menu li:nth-child(3){
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1023px) {
     header {
         height: 60px;
     }
