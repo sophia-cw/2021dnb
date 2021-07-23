@@ -1,4 +1,4 @@
-$pc_l: 1680px;
+$pc_l: 1679px;
 $pc_m: 1366px;
 $pc_s: 1025px;
 $pad: 769px;
@@ -161,7 +161,7 @@ p{
   color: #fff;
   width: 100%;
   height: auto;
-  min-height: 50vw;
+  min-height: 40vw;
   &__ttBox{
     position: absolute;
     top: 50%;
@@ -303,6 +303,10 @@ p{
   &__bg{
     width: 100%;
     height: auto;
+    @include pc-width_l(){
+      height: 720px;
+      overflow: hidden;
+    }
     img{
       display: block;
     }
