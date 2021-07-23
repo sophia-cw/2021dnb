@@ -8,10 +8,9 @@ header {
     color: #c7c7c7;
     font-size: 17px;
     font-family: 'Noto Serif TC', serif;
-    background: -moz-linear-gradient(top,  rgba(36,7,86,1) 0%, rgba(36,7,86,1) 1%, rgba(111,74,214,0.55) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(36,7,86,1) 0%,rgba(36,7,86,1) 1%,rgba(111,74,214,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(36,7,86,1) 0%,rgba(36,7,86,1) 1%,rgba(111,74,214,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#240756', endColorstr='#8c6f4ad6',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(to bottom,  rgba(36,7,86,1) 0%,rgba(48,14,107,0.9) 40%,rgba(111,74,214,0.8) 100%);
+    background: -webkit-linear-gradient(to bottom,  rgba(36,7,86,1) 0%,rgba(48,14,107,0.9) 40%,rgba(111,74,214,0.8) 100%);
+    background: linear-gradient(to bottom,  rgba(36,7,86,1) 0%,rgba(48,14,107,0.9) 40%,rgba(111,74,214,0.8) 100%);
 }
 header .menu {
     margin: auto;
@@ -37,22 +36,19 @@ header .menu li:hover,header .menu li a:hover {
 }
 
 header .menu>li:nth-child(1){
-    background: -moz-linear-gradient(top,  rgba(21,146,162,0) 0%, rgba(21,146,162,0) 1%, rgba(4,128,144,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(4,128,144,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(4,128,144,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001592a2', endColorstr='#048090',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top,  rgba(21,146,162,0) 0%, rgba(21,146,162,0) 1%, rgba(2,111,99,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(2,111,99,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(2,111,99,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 header .menu li:nth-child(2){
-    background: -moz-linear-gradient(top,  rgba(21,146,162,0) 0%, rgba(21,146,162,0) 1%, rgba(58,145,209,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(58,145,209,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(58,145,209,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001592a2', endColorstr='#3a91d1',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top,  rgba(21,146,162,0) 0%, rgba(21,146,162,0) 1%, rgba(0,98,177,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(0,98,177,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(21,146,162,0) 0%,rgba(21,146,162,0) 1%,rgba(0,98,177,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 header .menu li:nth-child(3){
-    background: -moz-linear-gradient(top,  rgba(193,164,84,0) 1%, rgba(193,164,84,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(193,164,84,0) 1%,rgba(193,164,84,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(193,164,84,0) 1%,rgba(193,164,84,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1a454', endColorstr='#c1a454',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top,  rgba(193,164,84,0) 1%, rgba(142,114,33,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(193,164,84,0) 1%,rgba(142,114,33,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(193,164,84,0) 1%,rgba(142,114,33,1) 100%); 
 }
     
 .open {
@@ -81,14 +77,14 @@ header .menu li:nth-child(3){
     top: 0;
     left: 0;
     text-align: center;
-    padding-top: 80px;
+    padding: 15% 5% 25%;
     z-index: 888;
     }
 
     header .menu li {
     letter-spacing: 2px;
     padding: 0 24px;
-    font-size: 30px;
+    font-size: 17px;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
@@ -155,7 +151,7 @@ header .menu li:nth-child(3){
     padding: 10px 13px;
     }
     header .menu li {
-    font-size: 18px;
+    font-size: 17px;
     color: #fff;
     }
 

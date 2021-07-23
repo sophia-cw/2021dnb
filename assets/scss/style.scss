@@ -83,6 +83,9 @@ $mb_s: 321px;
   line-height: 2rem;
   font-weight: 300;
   text-align: center;
+  @include mb-width_l(){
+    font-weight: 400
+  }
 }
 h4{
   @include box_subtt;
@@ -196,6 +199,14 @@ p{
         width: 60px;
         height: 60px;
         animation: mark_shine 5s ease-out 2s infinite forwards;
+        @include mb-width_l(){
+          top: -3.6%;
+          right:-3%
+        }
+        @include mb-width_m(){
+          top: -3.6%;
+          right:-3%
+        }
       }
     }
     .words{
@@ -224,9 +235,7 @@ p{
         @include mb-width_l(){
           font-size: 25px;
           text-align: center; 
-        }
-        @include mb-width_m(){
-          letter-spacing: 1px;
+          letter-spacing: 0px;
         }
         @include mb-width_s(){
           font-size: 21px;
@@ -365,8 +374,8 @@ p{
   }
 }
 @keyframes mark_shine{
-  0%{ transform: scale(1) rotate(0);}
-  20%{ transform: scale(1) rotate(0);}
+  0%{ transform: scale(1) rotate(0); }
+  20%{ transform: scale(1) rotate(0); }
   60%{ transform: scale(1.5) rotate(180deg);}
   100%{ transform: scale(1) rotate(180deg);}
 }
@@ -462,6 +471,7 @@ p{
       margin: 0 auto;
       @include mb-width_l(){
         margin: 0 auto 30px;
+        min-width: 150px;
       }
       .numder{
         margin: 0 0 20px;
@@ -469,10 +479,16 @@ p{
           color: #1592A2;
           font-size: 26px;
           font-weight: 500;
+          @include mb-width_l(){
+            font-size: 22px;
+          }
           span{
             font-size: 70px;
             @include pc-width_m(){
               font-size: 60px;
+            }
+            @include mb-width_l(){
+              font-size: 50px;
             }
           }
           span.mar{
@@ -491,6 +507,10 @@ p{
           @include box_subtt;
           @include pc-width_s(){
             font-size: 22px;
+          }
+          @include mb-width_l(){
+            font-size: 20px;
+            font-weight: 400;
           }
         }
       }
@@ -663,6 +683,8 @@ p{
       @include mb-width_l(){
         width: 80%;
         margin: auto;
+        position: relative;
+        z-index: 8;
       }
     }
     .words{
@@ -704,11 +726,21 @@ p{
           &:hover{
             filter:  contrast(200%);
           }
+          @include mb-width_l(){
+            display: inline-block;
+            justify-content: initial;
+            align-items: initial;
+            text-decoration-line: underline;
+            border-bottom:none;
+            text-decoration-thickness: 1px;
+          }
           img{
             width: 30px;
             display: inline-block;
             @include mb-width_l(){
-              margin-left: 3px;
+              margin: 4px;
+              width: 26px;
+              vertical-align: bottom;
             }
           }
         }
@@ -752,7 +784,7 @@ a.forum_btn{
         font-weight: 400;
         line-height: 2rem;
         @include mb-width_l(){
-          font-size: 17px;
+          text-align: left;
         }
       }
       .text{
@@ -760,6 +792,7 @@ a.forum_btn{
         font-size: 22px;
         @include mb-width_l(){
           font-size: 17px;
+          font-weight: 400;
           strong{
             font-size: 20px;
           }
@@ -840,6 +873,10 @@ a.forum_btn{
     font-size: 22px;
     color: #1A4DAD;
     letter-spacing: 2px;
+    @include mb-width_l(){
+      font-weight: 700;
+      line-height: 1.7rem;
+    }
   }
   .title{
     text-align: center;
@@ -848,6 +885,10 @@ a.forum_btn{
     font-size: 17px;
     color: #3A91D1;
     letter-spacing: 2px;
+    @include mb-width_l(){
+      font-weight: 400;
+      font-size: 16px;
+    }
   }
 }
 
@@ -910,10 +951,16 @@ a.forum_btn{
           font-weight: 300; 
           margin: 0px 0 20px;
           letter-spacing: 2px;
+          @include mb-width_l(){
+            font-weight: 400; 
+          }
         }
         p{
           color: #fff;
           text-align: left;
+          @include mb-width_l(){
+            line-height: 1.8rem;
+          }
         }
         a{
           width: 140px;
@@ -944,6 +991,9 @@ a.forum_btn{
             border: 1px #fff solid;
             top: 5px;
             left: 5px;
+          }
+          @include mb-width_l(){
+            font-weight: 400; 
           }
         }
       }
@@ -1012,11 +1062,29 @@ a.forum_btn{
     border: 1px #1a4dad solid;
     border-bottom: 10px #1a4dad solid;
     z-index: 889;
+    @include mb-width_l(){
+      padding: 70px 40px 40px;
+    }
     h2{
       margin: 0 0 10px;
+      @include mb-width_l(){
+        font-size: 30px;
+        line-height: 2.8rem;
+      }
     }
     h4{
       font-size: 22px;
+      @include mb-width_l(){
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+    }
+    p{
+      @include mb-width_l(){
+        line-height: 1.6rem;
+        font-weight: 400;
+      }
     }
   }
 }
