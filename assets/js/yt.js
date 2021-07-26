@@ -1,3 +1,22 @@
+$(function(){   
+    // 控制影片二開關
+    $(".btn_video").click(function () {
+        $(".popup_video").css("display","block");
+        $("body").css("overflow","hidden");
+        player.playVideo();
+        window.setTimeout(function () {
+            document.querySelector('#popup_player').style.zIndex = '100'
+        }, 200)
+    })
+
+    $(".icon--close").click(function () {
+        $(".popup_video").css("display","none");
+        $("body").css("overflow","auto");
+        player.stopVideo();
+        player.mute()
+    })
+});
+
 var tag = document.createElement('script');
   
 tag.src = "https://www.youtube.com/iframe_api";
@@ -32,19 +51,3 @@ function stopVideo() {
     player.mute()
 }
 
-// 控制影片二開關
-$(".title_kv--inner3").click(function () {
-    $(".popup_video").css("display","block");
-    $("body").css("overflow","hidden");
-    player2.playVideo();
-    window.setTimeout(function () {
-        document.querySelector('#popup_player').style.zIndex = '100'
-    }, 200)
-})
-
-$(".icon--close").click(function () {
-    $(".popup_video").css("display","none");
-    $("body").css("overflow","auto");
-    player2.stopVideo();
-    player2.mute()
-})

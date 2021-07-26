@@ -60,8 +60,8 @@
 	<link href="assets/css/reset.css" rel="stylesheet">
 	<link href="assets/css/common.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/js/slick/slick.css">
-	<link rel="stylesheet" href="assets/js/slick/slick-theme.css">
+	<link rel="stylesheet" href="assets/slick/slick.css">
+	<link rel="stylesheet" href="assets/slick/slick-theme.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -73,10 +73,24 @@
 	<script src="assets/js/yt.js"></script>
 </head>
 
-<body>
-	<div id="in_header" class="header_bg--2"></div>
-	<div id="fix_btn" class="part3"><p>立即報名</p></div>
+<body id="anniversary">
+	<div id="in_header"></div>
+	<div id="fix_btn" class="part3"><p>線上高峰論壇</p></div>
 	<section class="kvBox kvBox--anniversary">
+		<!-- 下方錨點 -->
+		<div class="subMenu">
+			<ul>
+				<li>D&B Talk</li>
+				<li>聚焦趨勢</li>
+				<li>觀點報導</li>
+				<li>關鍵年代</li>
+			</ul>
+		</div>
+		<!-- 觀看完整影片 -->
+		<div class="btn_video">
+			<p>觀看<br>完整影片</p>
+			<img src="assets/images/anniversary/btn_video.svg" alt="">
+		</div>
 		<div class="kvBox__ttBox kvBox__ttBox--b">
 			<div class="words">
 				<img data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500" src="assets/images/logo-dnb.png" alt="鄧白氏">
@@ -98,29 +112,187 @@
 				</div>
 			</div>
 		</div>
+	</section>
+	<!-- 彈出視窗 影片 -->
+	<div class="popup_video">
+		<div class="videoout">
+			<div class="video-container">
+			<div id="popup_player"></div>
+			</div>
+		</div>
+		<span class="icon--close"></span>
+	</div>
+	<!-- D&B Talk ／ 轉型思維 -->
+	<section class="articleBox articleBox--main">
+		<h2>D&B Talk ／ 轉型思維</h2>
+		<div class="articleBox__content">
+			<div class="article article--main">
+				<div class="pic">
+					<img src="assets/images/anniversary/pic_1.png" alt="">
+				</div>
+				<div class="text">
+					<h2>風險管理得好，就是商機！<br>大數據如何幫企業活下去</h2>
+					<p>全球黑天鵝、黑犀牛日益頻繁，美商鄧白氏股份有限公司台灣區總經理孫偉真認為，藉由大數據應用，企業可以更精準的評估風險，進而找出背後的商機，看見裂縫後的那道光。</p>
+					<div class="btn_more">
+						<div class="deco"></div>
+						<p>more</p>
+					</div>
+				</div>
+				<a href="https://www.cw.com.tw/article/5117238" target="_blank"></a>
+			</div>
+		</div>
+		<div class="deco_bottom_line"></div>
+	</section>
+	<!-- 聚焦趨勢 -->
+	<section class="articleBox articleBox--sub">
+		<h2>聚焦趨勢</h2>
+		<div class="articleBox__content">
+			<div class="article article--main">
+				<div class="pic">
+					<img src="assets/images/anniversary/demo.jpg" alt="">
+				</div>
+				<div class="text">
+					<h2>風險管理得好，就是商機！<br>大數據如何幫企業活下去</h2>
+					<p>全球黑天鵝、黑犀牛日益頻繁，美商鄧白氏股份有限公司台灣區總經理孫偉真認為，藉由大數據應用，企業可以更精準的評估風險，進而找出背後的商機，看見裂縫後的那道光。</p>
+					<div class="btn_more">
+						<div class="deco"></div>
+						<p>more</p>
+					</div>
+				</div>
+				<a href="https://www.cw.com.tw/article/5117238" target="_blank"></a>
+			</div>
+			<div class="article_slider">
+				<div class="slider multiple-items">
+					<div class="item">
+						<div class="article">
+							<div class="pic">
+								<img src="assets/images/anniversary/demo.jpg" alt="">
+							</div>
+							<h2>風險管理得好，就是商機！</h2>
+							<div class="btn_more">
+								<div class="deco"></div>
+								<p>more</p>
+							</div>
+							<a href="https://www.cw.com.tw/article/5117238" target="_blank"></a>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="article">
+							<div class="pic">
+								<img src="assets/images/anniversary/demo.jpg" alt="">
+							</div>
+							<h2>風險管理得好，就是商機！</h2>
+							<div class="btn_more">
+								<div class="deco"></div>
+								<p>more</p>
+							</div>
+							<a href="https://www.cw.com.tw/article/5117238" target="_blank"></a>
+						</div>
+					</div>
 
-		<div class="popup_video">
-			<div class="videoout">
-				<div class="video-container">
-				<div id="popup_player"></div>
+					<div class="item">
+						<div class="article">
+							<div class="pic">
+								<img src="assets/images/anniversary/demo.jpg" alt="">
+							</div>
+							<h2>風險管理得好，就是商機！</h2>
+							<div class="btn_more">
+								<div class="deco"></div>
+								<p>more</p>
+							</div>
+							<a href="https://www.cw.com.tw/article/5117238" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="article">
+							<div class="pic">
+								<img src="assets/images/anniversary/demo.jpg" alt="">
+							</div>
+							<h2>風險管理得好，就是商機！</h2>
+							<div class="btn_more">
+								<div class="deco"></div>
+								<p>more</p>
+							</div>
+							<a href="https://www.cw.com.tw/article/5117238" target="_blank"></a>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="article">
+							<div class="pic">
+								<img src="assets/images/anniversary/demo.jpg" alt="">
+							</div>
+							<h2>風險管理得好，就是商機！</h2>
+							<div class="btn_more">
+								<div class="deco"></div>
+								<p>more</p>
+							</div>
+							<a href="https://www.cw.com.tw/article/5117238" target="_blank"></a>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="article">
+							<div class="pic">
+								<img src="assets/images/anniversary/demo.jpg" alt="">
+							</div>
+							<h2>風險管理得好，就是商機！</h2>
+							<div class="btn_more">
+								<div class="deco"></div>
+								<p>more</p>
+							</div>
+							<a href="https://www.cw.com.tw/article/5117238" target="_blank"></a>
+						</div>
+					</div>
+
 				</div>
 			</div>
-			<span class="icon--close"></span>
 		</div>
-
-		
-
 	</section>
-
-
 
 	<div id="in_footer"></div>
 
-	<script src="assets/js/slick/slick.min.js"></script>
+	<script src="assets/slick/slick.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="assets/js/module.js"></script>
 	<script>
 		AOS.init();
+	</script>
+	<script>
+		$('.multiple-items').slick({
+			// infinite: true,
+			// slidesToShow: 2,
+			// slidesToScroll: 1,
+			// centerPadding: '60px',
+			responsive: [
+				{
+					breakpoint: 9999,
+					settings: "unslick"
+				},
+				{
+					breakpoint: 1025,
+					settings: {
+						infinite: true,
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						centerPadding: '60px',
+						dots: true,
+					}
+				},
+				{
+					breakpoint: 440,
+					settings: {
+						infinite: true,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						centerPadding: '0px',
+						dots: true,
+					}
+				},
+			]
+		});
 	</script>
 </body>
 

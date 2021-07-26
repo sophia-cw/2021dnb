@@ -8,6 +8,9 @@ header {
     color: #c7c7c7;
     font-size: 17px;
     font-family: 'Noto Serif TC', serif;
+    transition: 0.4s;
+}
+.header_bg{
     background: -moz-linear-gradient(to bottom,  rgba(36,7,86,1) 0%,rgba(48,14,107,0.9) 40%,rgba(111,74,214,0.8) 100%);
     background: -webkit-linear-gradient(to bottom,  rgba(36,7,86,1) 0%,rgba(48,14,107,0.9) 40%,rgba(111,74,214,0.8) 100%);
     background: linear-gradient(to bottom,  rgba(36,7,86,1) 0%,rgba(48,14,107,0.9) 40%,rgba(111,74,214,0.8) 100%);
@@ -196,8 +199,10 @@ header .menu li:nth-child(3){
     width: 100%;
 }
     
-footer { width: 100%; display: block; text-align: center; background-color: #363636; padding: 62px 0;}
-footer a{  display: inline; border-bottom: 1px solid #fff; color: #fff;}
+footer {     z-index: 7;
+    position: relative;
+    width: 100%; display: block; text-align: center; background-color: #363636; padding: 62px 0; z-index: 6;}
+footer a{  display: inline; color: #fff; text-decoration: underline; }
 footer p {  font-size: 14px; font-family: "Noto Sans TC",sans-serif ; font-weight: 100;line-height: 28px; color: #fff;}
   @media all and (max-width: 769px) {
     footer { 

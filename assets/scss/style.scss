@@ -303,8 +303,12 @@ p{
   &__bg{
     width: 100%;
     height: auto;
+    @media all and (min-width: 1240px) {
+      height: 600px;
+      overflow: hidden;
+    }
     @include pc-width_l(){
-      height: 720px;
+      height: 700px;
       overflow: hidden;
     }
     img{
@@ -1138,7 +1142,7 @@ a.forum_btn{
     }
   h4{
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Noto Serif TC', serif; 
     font-weight: 600;
     line-height: initial;

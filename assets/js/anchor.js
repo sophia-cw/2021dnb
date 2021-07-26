@@ -116,3 +116,19 @@ $(function(){
     $(".btn_toggle--2 span:nth-child(2),.btn_toggle--3 span:nth-child(2),.btn_toggle--4 span:nth-child(2),.btn_toggle--1 span:nth-child(2)").show(); 
   });
 });
+
+// header
+$(function(){
+  $(window).scroll(function() {
+     if($(window).scrollTop() >= 150) {
+        $('header').addClass('header_bg');
+        $('#anniversary header').addClass('header_bg--2');
+     }
+    else {
+      $('header').removeClass('header_bg');
+      $('#anniversary header').removeClass('header_bg--2');
+    }
+  });
+
+
+});
