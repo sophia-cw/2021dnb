@@ -129,6 +129,117 @@ $(function(){
       $('#anniversary header').removeClass('header_bg--2');
     }
   });
+});
 
+// anniversary newsBox
+$(function(){
+  $(".news_list--1").click(function () {
+    $(".news_content--1").css("display","flex");
+    $(".news_content--2").hide();
+    $(".news_content--3").hide();
+    $(".news_content--4").hide();
+    $(".news_content--5").hide();
+    $(".news_content--6").hide();
+    $(".list").removeClass("active");
+    $(".news_list--1").addClass("active");
+  });
+  $(".news_list--2").click(function () {
+    $(".news_content--1").hide();
+    $(".news_content--2").css("display","flex");
+    $(".news_content--3").hide();
+    $(".news_content--4").hide();
+    $(".news_content--5").hide();
+    $(".news_content--6").hide();
+    $(".list").removeClass("active");
+    $(".news_list--2").addClass("active");
+  });
+  $(".news_list--3").click(function () {
+    $(".news_content--1").hide();
+    $(".news_content--2").hide();
+    $(".news_content--3").css("display","flex");
+    $(".news_content--4").hide();
+    $(".news_content--5").hide();
+    $(".news_content--6").hide();
+    $(".list").removeClass("active");
+    $(".news_list--3").addClass("active");
+  });
+  $(".news_list--4").click(function () {
+    $(".news_content--1").hide();
+    $(".news_content--2").hide();
+    $(".news_content--3").hide();
+    $(".news_content--4").css("display","flex");
+    $(".news_content--5").hide();
+    $(".news_content--6").hide();
+    $(".list").removeClass("active");
+    $(".news_list--4").addClass("active");
+  });
+  $(".news_list--5").click(function () {
+    $(".news_content--1").hide();
+    $(".news_content--2").hide();
+    $(".news_content--3").hide();
+    $(".news_content--4").hide();
+    $(".news_content--5").css("display","flex");
+    $(".news_content--6").hide();
+    $(".list").removeClass("active");
+    $(".news_list--5").addClass("active");
+  });
+  $(".news_list--6").click(function () {
+    $(".news_content--1").hide();
+    $(".news_content--2").hide();
+    $(".news_content--3").hide();
+    $(".news_content--4").hide();
+    $(".news_content--5").hide();
+    $(".news_content--6").css("display","flex");
+    $(".list").removeClass("active");
+    $(".news_list--6").addClass("active");
+  });
+});
 
+// anniversary slick Box
+$(".btn_language").click(function () {
+  $(".language_main").toggleClass('language_main--click');
+  // 切換按鈕文字:
+  var i = $(".language_main p").attr("res");
+  if (i == 0) {
+    $(".language_main p").attr("res", "1");
+    $(".language_main p").html("中");
+    $(".language_tw").show();
+    $(".language_en").hide();
+  } else {
+    $(".language_main p").attr("res", "0");
+    $(".language_main p").html("英");
+    $(".language_tw").hide();
+    $(".language_en").show();
+  }
+  // 切換按鈕文字 end
+});
+
+// anniversary 小選單
+$(".go_1").click(function(){
+  $("html,body").animate(
+    { scrollTop: $("#dnbtalk").offset().top + 1 },
+    900
+  );
+  return false;
+});
+$(".go_2").click(function(){
+  $("html,body").animate(
+    { scrollTop: $("#focus").offset().top + 1 },
+    900
+  );
+  return false;
+});
+$(".go_3").click(function(){
+  $("html,body").animate(
+    { scrollTop: $("#news").offset().top + 1 },
+    900
+  );
+  return false;
+});
+$(".go_4").click(function(){
+  $("html,body").animate(
+    { scrollTop: $("#decade").offset().top + 1 },
+    900
+  );
+  return false;
 });

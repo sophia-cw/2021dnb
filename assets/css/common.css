@@ -206,18 +206,13 @@ footer a{  display: inline; color: #fff; text-decoration: underline; }
 footer p {  font-size: 14px; font-family: "Noto Sans TC",sans-serif ; font-weight: 100;line-height: 28px; color: #fff;}
   @media all and (max-width: 769px) {
     footer { 
-        padding: 20px 10px;
-        font-size: 14px;
+        padding: 30px 10px 80px;
+        font-size: 12px;
     }
     footer p {
       line-height: 22px;
     }
   }
-  @media all and (max-width: 769px) {
-        footer { 
-            padding: 30px 10px 80px;
-        }
-    }
 .body_fixed{
 overflow: hidden;
 width: 100%;
