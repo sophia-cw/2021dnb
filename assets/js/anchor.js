@@ -26,6 +26,14 @@ $(function(){
       $(".review").fadeToggle("slow");
     });
 
+    $(".forum_btn").click(function(){
+      $("html,body").animate(
+        { scrollTop: $("#survey").offset().top + 1 },
+        900
+      );
+      return false;
+    });
+
     // 漢堡選單
     $(".open").click(function () {
       $("nav").toggle("slow");

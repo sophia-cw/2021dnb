@@ -245,20 +245,6 @@ p{
         @include mb-width_s(){
           font-size: 21px;
         }
-        &::before{
-          content: "";
-          position: absolute;
-          top: inherit;
-          right: inherit;
-          left: 280px;
-          bottom: 22%;
-          width: 50%;
-          height: 1px;
-          background-color: #fff;
-          @include mb-width_l(){
-            display: none;
-          }
-        }
       }
       .kv_subtt_2{
         width: 62%;

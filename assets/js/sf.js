@@ -250,4 +250,46 @@ $('#sendBtn').click(function () {
 
         return false
     }
+
+    // 如果必填欄位都過了 才會到這邊
+    if(status){
+        // 按下salesforce的按鈕
+        $("#sfBtn").click();
+        // 打包 要的資料，將這邊的名稱帶入gs檔裡
+        var data = {
+            'last_name': last_name,
+            'email' : email,
+            'company': company,
+            'note1': note1,
+            'department': department,
+            'title': title,
+            'note2': note2,
+            'mobile': mobile,
+            'note3': note3,
+            'policy': policy,
+            'note': note,
+        }
+        // 呼叫 send ajax function
+        send(data);
+        // $('.sf_form').hide();
+        $(".tks").show();
+    }
 })
+// 送資料去googlesheet
+function send(data){
+    $.ajax({
+        // 這邊用get type
+        type: "get",
+        // api url - google appscript 產出的 url，sheet：https://docs.google.com/spreadsheets/d/1lvQeNBm-URU9oB8MQ30cZq8CFDZ11guz5TkJ-JbVS4M/edit#gid=0
+        url: "https://script.google.com/macros/s/AKfycbx-WbtzMdUSW_bdBiwKZsLpfkVjNKH4WBiJ1O0Izr271HPfJtU/exec",
+        // 剛剛整理好的資料帶入
+        data: data,
+        // 資料格式是JSON 
+        dataType: "JSON",
+        // 成功送出 會回頭觸發下面這塊感謝
+        success: function (response) {
+        console.log(response);
+        // alert('感謝，您已完成訂閱!');
+        }
+    });
+}
