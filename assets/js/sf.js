@@ -98,6 +98,8 @@ $(function(){
     }
 
     $('#sendBtn').click(function () {
+        
+        var status = true
 
         var last_name = $('#last_name').val().trim()
         var email = $('#email').val().trim()
@@ -121,11 +123,13 @@ $(function(){
         //備註欄位需加入!=='' （ note1 !== '' && note2 !== '' ）
         if (email !== '' && $Emailchecking2 == true && mobile !== '' && $mobile == true && last_name !== '' &&
             company !== '' && note1 !== '' && note2 !== '' && note3 !== undefined && $('#policy').is(':checked')) {
-            $('#sfBtn').click()
-            $('.sf_form').hide()
-            $('.tks').show()
+//             $('#sfBtn').click()
+//             $('.sf_form').hide()
+//             $('.tks').show()
         } else {
-
+            
+            status = false
+            
             //姓名驗證是否填寫
             if (last_name == '') {
                 $('.errorName,.errorSubmit')
@@ -271,7 +275,7 @@ $(function(){
             }
             // 呼叫 send ajax function
             send(data);
-            // $('.sf_form').hide();
+            $('.sf_form').hide();
             $(".tks").show();
         }
     });
